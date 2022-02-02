@@ -6,9 +6,12 @@
         @auth
             <div class="ms-container-auth">
                Ciao {{ Auth::user()->name }}
+               <div>
+                    <a href="{{ route('logout') }}">LOGOUT</a>
+               </div>
             </div>
         @else
-            <div class="ms-container-auth">
+            <div class="ms-container-auth"> 
                 Se vuoi continuare, registrati o fai il login
             </div>
         @endauth
@@ -29,6 +32,22 @@
             <label for="password-confirm">Confirm password</label>
             <input type="password" name="password_confirmation" placeholder="password confirmation" value="password">
             <input type="submit" class="btn-success" value="REGISTRATI">
+        </form>
+
+        <br><hr class="bg-white"><br>
+
+        {{-- Login form --}}
+        <h2>LOGIN</h2>
+        <form action="{{ route('login') }}" method="POST">
+
+            @method('POST')
+            @csrf
+
+            <label for="email">Email</label>
+            <input type="text" name="email" placeholder="email">
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="password">
+            <input type="submit" class="btn-success" value="LOGIN">
         </form>
 
     </div>

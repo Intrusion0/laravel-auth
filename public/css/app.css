@@ -11012,3 +11012,9 @@ footer {
   color: #e7e7e7;
 }
 
+.ms-container .ms-container-auth {
+  font-size: 30px;
+  text-align: center;
+  color: yellow;
+}
+
