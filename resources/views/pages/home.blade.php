@@ -29,7 +29,7 @@
             <input type="text" name="email" placeholder="email" value="mario@gmail.com">
             <label for="password">Password</label>
             <input type="password" name="password" placeholder="password" value="password">
-            <label for="password-confirm">Confirm password</label>
+            <label for="password-confirmation">Confirm password</label>
             <input type="password" name="password_confirmation" placeholder="password confirmation" value="password">
             <input type="submit" class="btn-success" value="REGISTRATI">
         </form>
