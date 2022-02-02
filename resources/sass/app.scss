@@ -6,3 +6,55 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+// General rules
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: purple;
+    color: #fff;
+}
+
+// Header | Footer
+header, footer {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+// Home
+.ms-container {
+    width: 60%;
+    margin: 0 auto;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        margin: 0 auto;
+
+        label {
+            font-size: 20px;
+        }
+
+        input {
+            margin-bottom: 20px;
+
+            &.btn-success {
+                width: 120px;
+                margin: 10px auto;
+            }
+        }
+    }
+
+    h2 {
+        text-align: center;
+        padding: 20px 0;
+        color: #e7e7e7;
+    }
+}
